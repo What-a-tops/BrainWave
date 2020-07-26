@@ -34,7 +34,7 @@ $routes->get('/', 'Login::index', ['filter' => 'noauth']);
 $routes->match(['get', 'post'],'register', 'Login::register', ['filter' => 'noauth']);
 $routes->get('logout', 'Login::logout');
 $routes->get('home', 'Home::index', ['filter' => 'auth']);
-$routes->get('(:any)', 'Pages::view/$1');
+//$routes->get('(:any)', 'Pages::view/$1');
 /**
  * --------------------------------------------------------------------
  * Additional Routing
